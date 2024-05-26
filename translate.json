@@ -1,0 +1,98 @@
+{
+    "intents": [
+      {
+        "tag": "greetings",
+        "patterns": {
+          "en": ["hello", "hi", "Hi", "good day", "hey there", "how's it going?"],
+          "ja": ["こんにちは", "やあ","こんにちは"],
+          "ta": ["வணக்கம்", "ஹாய்", "ஹாய்"]
+        },
+        "responses": {
+          "en": ["Hello! How can I assist you today?", "Hi there! What medical query do you have today?"],
+          "ja": ["こんにちは！ 今日はどのようにお手伝いしましょうか？", "こんにちは！ 今日はどんな医療相談がありますか？"],
+          "ta": ["வணக்கம்! இன்று நான் உங்களுக்கு எப்படி உதவலாம்?", "வணக்கம்! இன்று உங்களுக்கு என்ன மருத்துவ கேள்வி உள்ளது?"]
+        }
+      },
+      {
+        "tag": "medicalAdvice",
+        "patterns": {
+          "en": ["What should I do if I feel sick?", "I'm not feeling well", "I think I have a fever", "I have a cough", "symptoms of the flu"],
+          "ja": ["気分が悪い時はどうすればいいですか？", "気分が良くない", "熱があると思う", "咳が出る", "インフルエンザの症状"],
+          "ta": ["நான் உடல்நலம் குன்றிய போது என்ன செய்ய வேண்டும்?", "நான் நன்றாக உணரவில்லை", "எனக்கு காய்ச்சல் இருக்கிறது என்று நினைக்கிறேன்", "எனக்கு இருமல் உள்ளது", "புள்ளிகளின் அறிகுறிகள்"]
+        },
+        "responses": {
+          "en": ["It sounds like you might be ill. Can you tell me more about your symptoms?", "I'm here to help. Please describe your symptoms in more detail."],
+          "ja": ["あなたは病気かもしれません。 症状についてもっと教えてもらえますか？", "お手伝いします。 症状を詳しく教えてください。"],
+          "ta": ["நீங்கள் நோய்வாய்ப்பட்டிருக்கலாம். உங்கள் அறிகுறிகளை மேலும் விவரிக்க முடியுமா?", "நான் உதவ இங்கு உள்ளேன். உங்கள் அறிகுறிகளை மேலும் விவரிக்கவும்."]
+        }
+      },
+      {
+        "tag": "symptomCheck",
+        "patterns": {
+          "en": ["I have a headache", "My stomach hurts", "I've been coughing a lot", "I feel dizzy", "I have a sore throat"],
+          "ja": ["頭痛がします", "お腹が痛い", "たくさん咳をしています", "めまいがします", "喉が痛いです"],
+          "ta": ["எனக்கு தலைவலி உள்ளது", "என் வயிறு வலிக்கிறது", "நான் நிறைய இருமல் செய்கிறேன்", "எனக்கு மயக்கம் உள்ளது", "எனக்கு தொண்டை வலிக்கிறது"]
+        },
+        "responses": {
+          "en": ["Those symptoms can be concerning. Have you experienced any other symptoms?", "In order to provide better advice, I need more details about your symptoms and how long you've been experiencing them."],
+          "ja": ["それらの症状は心配かもしれません。他にも症状はありますか？", "より良いアドバイスを提供するために、症状の詳細とそれらを経験している期間を教えてください。"],
+          "ta": ["அந்த அறிகுறிகள் கவலைக்கிடமாக இருக்கலாம். நீங்கள் வேறு எந்த அறிகுறிகளை அனுபவித்திருக்கிறீர்கள்?", "சிறந்த ஆலோசனையை வழங்க முடியும் என்பதற்கு, உங்கள் அறிகுறிகள் பற்றிய மேலும் விவரங்களையும், நீங்கள் எவ்வளவு காலமாக அவற்றை அனுபவித்து வருகிறீர்கள் என்பதையும் எனக்கு தெரிவிக்க வேண்டும்."]
+        }
+      },
+      {
+        "tag": "appointmentScheduling",
+        "patterns": {
+          "en": ["I need to make an appointment", "Can I schedule a visit?", "I want to see a doctor", "book an appointment", "doctor's appointment"],
+          "ja": ["予約を取りたい", "訪問予約は可能ですか？", "医者に診てもらいたい", "予約をする", "医者の予約"],
+          "ta": ["எனக்கு ஒரு நியமனம் தேவை", "நான் ஒரு வருகையை அட்டவணையிடலாமா?", "நான் ஒரு மருத்துவரை பார்க்க விரும்புகிறேன்", "ஒரு நியமனம் புத்தகம்", "மருத்துவரின் நியமனம்"]
+        },
+        "responses": {
+          "en": ["Sure, I can help you with that. What day and time are you looking for?", "To schedule an appointment, please provide me with your preferred date and time."],
+          "ja": ["もちろん、そのお手伝いをします。何曜日と時間をお探しですか？", "予約を取るために、希望の日付と時間を教えてください。"],
+          "ta": ["நிச்சயம், நான் அதில் உங்களுக்கு உதவ முடியும். நீங்கள் தேடும் நாள் மற்றும் நேரம் என்ன?", "ஒரு நியமனத்தை அட்டவணையிட, தயவுசெய்து உங்களுடைய விருப்பமான தேதி மற்றும் நேரத்தை எனக்கு வழங்கவும்."]
+        }
+      },
+      {
+        "tag": "thanks",
+        "patterns": {
+          "en": ["thank you", "thanks", "I appreciate your help", "that was helpful"],
+          "ja": ["ありがとう", "感謝します", "あなたの助けに感謝します", "それは役に立ちました"],
+          "ta": ["நன்றி", "நன்றி", "உங்கள் உதவிக்கு நான் நன்றி", "அது உதவியாக இருந்தது"]
+        },
+        "responses": {
+          "en": ["You're welcome! If you have any more questions, feel free to ask.", "I'm glad I could help. Do you have any other questions?"],
+          "ja": ["どういたしまして！他に質問があれば、お気軽にどうぞ。", "お役に立てて嬉しいです。他に質問はありますか？"],
+          "ta": ["வரவேற்கிறேன்! மேலும் கேள்விகள் இருந்தால், கேட்க தயங்கவேண்டாம்.", "உதவ முடிந்ததில் மகிழ்ச்சி. மேலும் ஏதேனும் கேள்விகள் உள்ளனவா?"]
+        }
+      },
+      {
+        "tag": "goodbye",
+        "patterns": {
+          "en": ["goodbye", "bye", "see you later", "I'm done", "that's all"],
+          "ja": ["さようなら", "バイバイ", "またね", "終わりました", "それだけです"],
+          "ta": ["குட்பை", "பை", "பின்னர் சந்திப்போம்", "நான் முடித்துவிட்டேன்", "அவ்வளவுதான்"]
+        },
+        "responses": {
+          "en": ["Goodbye! Take care and feel free to return if you have more questions.", "Bye! Wishing you good health."],
+          "ja": ["さようなら！お大事に。他に質問があればいつでもどうぞ。", "バイバイ！健康を祈っています。"],
+          "ta": ["குட்பை! பாதுகாப்பாக இருங்கள், மேலும் கேள்விகள் இருந்தால் திரும்பி வாருங்கள்.", "பை! நல்ல உடல்நலத்தை வாழ்த்துகிறேன்."]
+       
+        }
+    },
+    {
+        "tag": "invalid",
+        "patterns": {
+          "en": [""],
+          "ja": [""],
+          "ta": [""]
+        },
+        "responses": {
+          "en": ["I'm sorry, I didn't catch that. Could you please repeat or rephrase your question?", "I'm not sure how to respond to that. Can you provide more details?"],
+          "ja": ["ごめんなさい、それを聞き逃しました。質問を繰り返すか、言い換えてもらえますか？", "どのように返答してよいか分かりません。詳細を教えてもらえますか？"],
+          "ta": ["மன்னிக்கவும், அதை நான் கவனிக்கவில்லை. தயவுசெய்து உங்கள் கேள்வியை மீண்டும் கேட்கவும் அல்லது மறுபடியும் கூறவும்?", "அதற்கு எப்படி பதில் அளிக்க வேண்டும் என்று நான் உறுதியில்லை. மேலும் விவரங்களை வழங்க முடியுமா?"]
+        }
+      }       
+      
+    ]
+  }
+  

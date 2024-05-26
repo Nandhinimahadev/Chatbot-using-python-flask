@@ -1,0 +1,39 @@
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": ["hello", "hi","Hi", "good day", "hey there", "how's it going?"],
+      "responses": ["Hello! How can I assist you today?", "Hi there! What medical query do you have today?"]
+    },
+    {
+      "tag": "medicalAdvice",
+      "patterns": ["What should I do if I feel sick?", "I'm not feeling well", "I think I have a fever", "I have a cough", "symptoms of the flu"],
+      "responses": ["It sounds like you might be ill. Can you tell me more about your symptoms?", "I'm here to help. Please describe your symptoms in more detail."]
+    },
+    {
+      "tag": "symptomCheck",
+      "patterns": ["I have a headache", "My stomach hurts", "I've been coughing a lot", "I feel dizzy", "I have a sore throat"],
+      "responses": ["Those symptoms can be concerning. Have you experienced any other symptoms?", "In order to provide better advice, I need more details about your symptoms and how long you've been experiencing them."]
+    },
+    {
+      "tag": "appointmentScheduling",
+      "patterns": ["I need to make an appointment", "Can I schedule a visit?", "I want to see a doctor", "book an appointment", "doctor's appointment"],
+      "responses": ["Sure, I can help you with that. What day and time are you looking for?", "To schedule an appointment, please provide me with your preferred date and time."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thank you", "thanks", "I appreciate your help", "that was helpful"],
+      "responses": ["You're welcome! If you have any more questions, feel free to ask.", "I'm glad I could help. Do you have any other questions?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["goodbye", "bye", "see you later", "I'm done", "that's all"],
+      "responses": ["Goodbye! Take care and feel free to return if you have more questions.", "Bye! Wishing you good health."]
+    },
+    {
+      "tag": "invalid",
+      "patterns": [""],
+      "responses": ["I'm sorry, I didn't catch that. Could you please repeat or rephrase your question?", "I'm not sure how to respond to that. Can you provide more details?"]
+    }
+  ]
+}
